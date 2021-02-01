@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff"); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Variables*/
+:root {
+    --basic-white: #ffffff;
+    --basic-black: #000000;
+    --basic-extra: #FB565A;
+    --basic-extra:  #00CA74;
+    --basic-extra:  #EFC849;
+    --bacic-extra: #666666;
+
+
+}
+
+/* Global*/
+body {
+    min-width: 960px;
+    margin: 0%;
+    padding: 0%;
+    font-family: "roboto";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: none;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black--);
+    background-color: transparent;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: var(--basic-black--);
+    
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color:#FB565A;
+}
+
+.main-header {
+    background-image: url("../img/Rectangle\ 5.png"); 
+    
+}
+
+.main-header-catalog {
+  
+}
+.main-background {
+   
+
+
+}
+
+/* Offers*/
+.offers-list {
+list-style: none;
+}
+
+.offers-item {
+    text-align: center;
+
+}
+
+.offers-website h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.offers-illustration {
+    position: center;
+
+}
+
+/* Button */
+
+.button-more,
+ .contacts-button  {
+    font: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #FB565A ;
+    border: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+
+
+.button-website {
+    font: normal;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #FB565A;
+    border: none;
+}
+
+.button-applications {
+    font: inherit;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    background-color: #00CA74;
+    border: none;
+    text-transform: uppercase;
+}
+
+.button-presentation {
+    font: inherit;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    background-color: #EFC849;
+    border: none;
+    text-transform: uppercase;
+}
+
+.button-send {
+    font: inherit;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    background-color:#FB565A;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+.footer-social ul{
+    list-style: none;
+}
+
+.footer-social {
+    text-align: left;
+}
+
+/* Social button*/
+
+.social-button {
+    color: black;
+}
+
+.contacts-paragraph,
+.contacts-phone {
+    color: var(--bacic-extra);
+}
+
+/*Catalog*/
+
+.radio li, 
+.checkbox li {
+    font: normal;
+    color:#283136;
+    list-style: none;
+
+}
+
+.checkbox-input-checked {
+
+}
+
+
+.benefist-description {
+    border: 1px solid black;
+    max-width: 651px;
+    max-height: 379;
+    padding-left: 10px;
+}
+.advantages-item {
+    border: 1px solid black;
+    max-width: 78px;
+    max-height: 64;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.advantages {
+    border: 1px solid black;
+    max-width: 651px;
+    max-height: 379;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.popap {
+    border: 1px solid black;
+    max-width: 651px;
+    max-height: 379;
+    padding-left: 10px;
+}
+
+.parters-list {
+    border: 1px solid black;
+    max-width: 1158px;
+    max-height: 379;
+    padding-left: 10px;
+}
+
+
+.partners-htmlAcademy {
+    border: 1px solid black;
+    max-width: 173px;
+    max-height: 84;
+ 
+ }
+
+ .partners-borodinski {
+    border: 1px solid black;
+    max-width: 173px;
+    max-height: 84;
+}
+ 
+
+ .partners-pink {
+    border: 1px solid black;
+    max-width: 173px;
+    max-height: 84;
+}
+
+ 
+
+ .partners-mishka {
+    border: 1px solid black;
+    max-width: 173px;
+    max-height: 84;
+    padding-right: 10px;
+ }
+ 
+ 
+

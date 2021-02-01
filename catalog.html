@@ -3,82 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Дизайн студия Нердс</title>
+    <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 400; 700 & display = swap "rel =" stylesheet ">
+    <link rel="normalize.css" href="Normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <a href="index.html">
     <img src="img/nerds-logo.svg" width="159.87" Height="65.02" alt="Логотип Нёердс">
   </a>
 </head>
 
-<body>
+<body class="main-header">
 
-<header>
- <nav>
-     <ul>
-      <li><a href="blank.html">Студия</a></li> 
-      <li><a href="blank.html">Киенты</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-      <li><a href="blank.html">Магазин</a></li>
-     </ul>
- </nav>
- <a href="blank.html">Корзина
-  <img src="img/cart-icon.svg" width="15" height="11">
- </a>
-</header>
+  <header class="main-header-catalog">
+    <div class="header-div">
+     <!--background--> 
+     <a href="index.html" class="main-header-logo">
+       </a>
+       <!--<img class="main-background-catalog" src="img/Rectangle 5.png" width="1440" Height="355" alt="">!-->
+       <nav class="main-navigation">
+       <ul class="site-navigation">
+       <li><a class="site-navigation-item" href="blank.html">Студия</a></li> 
+       <li><a class="site-navigation-item" href="blank.html">Киенты</a></li>
+       <li><a class="site-navigation-item" href="blank.html">Контакты</a></li>
+       <li><a class="site-navigation-item" href="catalog.html">Магазин</a></li>
+       <a href="blank.html" class="cart">Корзина
+       <img class="cart-icon" src="img/cart-icon.svg" width="15" height="11">
+       </a>
+      </ul>
+     </nav>
+    </div>
+    </header>
 
- <main>
+ <main class="container">
   <h1>Магазин готовых шаблонов</h1>
-   
-  <section>
+   <section>
     <h2>Фильтр товаров</h2>
     <fieldset>
       <form action="https://echo.htmlacademy.ru" method="post"></form>
       <legend>Стоимость:</legend>
      <p>от-0 до-15 000</p>
+     <img src="img/Rectangle 21.png">
       <br>
     </fieldset>
-        <fieldset>    
+        <fieldset class="grig">    
         <legend>Сетка:</legend>
-      <ul>
+      <ul class="radio">
      <li>
-         <input type="radio" name="Адаптивная" id="filter-Адаптивная" checked>
+         <input class="radio-input" type="radio" name="Адаптивная" id="filter-Адаптивная" checked>
          <label for="filter-Адаптивная">Адаптивная</label>
      </li>
 
      <li>
-         <input type="radio" name="Фиксированная" id="filter-Фиксированная">
+         <input class="radio-input" type="radio" name="Фиксированная" id="filter-Фиксированная">
          <label for="filter-Фиксированная">Фиксированная</label>
     </li>
     <li>
-        <input type="radio" name="Резиновая" id="filter-Резиновая">
+        <input class="radio-input" type="radio" name="Резиновая" id="filter-Резиновая">
         <label for="filter-Резиновая">Резиновая</label>
     </li>
     </ul>
     </fieldset>
     
-    <fieldset>
+    <fieldset class="features">
     <legend>Особенности:</legend>
-    <ul>
+    <ul class="checkbox">
         <li>
-            <input type="checkbox" name="Слайдер" id="filter-слайдер" checked>
+            <input class="checkbox-input-checked" type="checkbox" name="Слайдер" id="filter-слайдер" checked>
             <label for="filter-слайдер">Слайдер</label>
         </li>
         <li>
-            <input type="checkbox" name="Блок преимуществ" id="filter-Блок преимуществ">
+            <input class="checkbox-input" type="checkbox" name="Блок преимуществ" id="filter-Блок преимуществ">
             <label for="filter-Блок преимуществ">Блок преимуществ</label>
         </li>
         <li>
-            <input type="checkbox" name="Новости" id="filter-Новости" checked>
+            <input class="checkbox-input-checked" type="checkbox" name="Новости" id="filter-Новости" checked>
             <label for="filter-Новости">Новости</label>
         </li>
         <li>
-            <input type="checkbox" name="Галерея" id="filter-Галерея">
+            <input class="checkbox-input" type="checkbox" name="Галерея" id="filter-Галерея">
             <label for="filter-Галерея">Галерея</label>
         </li>
         <li>
-            <input type="checkbox" name=" Корзина" id="filter- Корзина">
+            <input class="checkbox-input" type="checkbox" name=" Корзина" id="filter- Корзина">
             <label for="filter- Корзина">Корзина</label>
         </li>
     </fieldset>
-    <input type="submit" value="Показать">
+    <input class="input-show" type="submit" value="Показать">
     </ul>
 </form>
 
@@ -149,46 +158,52 @@
         </div>
      </ul>
     </section>
-      
-    <section>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-         <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная. д. 19/8<br>
-            Тел. <a href="tel:+78122757575">+7(812)-275-75-75</a><br>
-       <button type="button">Напиши нам</button>
-         </p>
-       </section>
-
-
-       
        <section>
        
          <!--Здесь будет карта-->
        
        </section>
-
-
 </main>
 
-<footer>
-    <section>
-   <ul>
-     <li>
-       <a href="#">Вконтакте</a>
-     </li>
-     <li>
-       <a href="#">Фейсбук</a>
-     </li>
-     <li>
-       <a href="#">Инстаграмм</a>
-     </li>
-   </ul>
+<footer class="main-footer">
+  <section>
+
+    <!--Здесь будет карта-->
+  
+  </section>
+
+  <section class="contacts">
+    <div>
+    <h3>NЁRDS DESIGN STUDIO</h3>
+     <p class="contacts-paragraph">191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная. д. 19/8<br>
+        Тел. <a class="contacts-phone" href="tel:+78122757575">+7(812)-275-75-75</a><br>
+           <a href="#" >
+             <button class="contacts-button" type="button" >Напишите нам</button>
+           </a>
+  </div>
+     </p>
+   </section>
    
-   <h3>давайте дружить это выгодно</h3>
-   <p>Скидка 10% из социальных сетей.</p>
-    </section>
-   
-  </footer>
+ <section class="footer-social">
+   <div>
+<ul>
+  <li>
+    <a class="social-button" href="#">Вконтакте</a>
+  </li>
+  <li>
+    <a class="social-button" href="#">Фейсбук</a>
+  </li>
+  <li>
+    <a class="social-button" href="#">Инстаграмм</a>
+  </li>
+</ul>
+</div>
+
+<h3>Давайте дружить это выгодно</h3>
+<p>Скидка 10% из социальных сетей.</p>
+ </section>
+</footer>
 
 </body>
 </html>
