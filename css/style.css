@@ -27,7 +27,7 @@
 }
 
 /* Global*/
-body {
+.page-body {
     min-width: 960px;
     margin: 0%;
     padding: 0%;
@@ -41,7 +41,17 @@ body {
     background-image: none;
     background-position: top center;
     background-repeat: no-repeat;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
+
+.page {
+    height: 100%;
+}
+
 
 a {
     text-decoration: none;
@@ -52,30 +62,86 @@ img {
     height: auto;
 }
 
-.main-navigation {
-    font-size: 16px;
-    line-height: 30px;
-    color: var(--basic-black--);
-    background-color: transparent;
+/* Main */
+.conteiner {
+    width: 300px;
+    margin: 0 auto;
+    padding: 500 500px;
+    outline: 5px solid red;
+    outline-offset: -5px;
+}
+
+.main-navigation-wrapper {
+    
 }
 
 .site-navigation {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 45px;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black--);
+    background-color: transparent;
+    outline: 5px solid rgb(0, 129, 151);
+    outline-offset: -5px;
+    list-style: none;
+    
+    
 }
 
-.site-navigation a {
+.site-navigation a, li {
     color: var(--basic-black--);
+    
+    
     
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
     background-color:#FB565A;
+    
 }
 
 .main-header {
-    background-image: url("../img/Rectangle\ 5.png"); 
+    position: absolute;
+    width: 1440px;
+    height: 545px;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+    background: #EEEEEE;
+    margin-bottom: 0px;
+    outline: 5px solid green;
+    outline-offset: -5px;
     
+}
+
+.main-header-logo {
+    position: absolute;
+    left: 140px;
+    top: 48.98px;
+}
+
+.slide {
+    position: absolute;
+    left: 140px;
+    top: 114px;
+
+}
+
+
+.header-div {
+
+}
+
+.nerds-slide {
+    position: absolute;
+    width: 760px;
+    height: 431px;
+    margin-left: 537px;
+    margin-top: 114px;
 }
 
 .main-header-catalog {
@@ -87,24 +153,118 @@ img {
 
 }
 
+/* container*/
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
 /* Offers*/
-.offers-list {
-list-style: none;
+
+.offers  {
+    margin-top: 625px;
+    margin-bottom: 80px;
+    list-style: none;
+
+}
+
+.offers-list { 
+    font: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    column-gap: 100px;
+    list-style: none;
+    text-align: center;
+    
 }
 
 .offers-item {
-    text-align: center;
+   text-align: center;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
 
 }
 
-.offers-website h3{
-    font-size: 24px;
-    line-height: 30px;
+.offers-website {
+    
+
+
+    
 }
 
 .offers-illustration {
-    position: center;
+    
 
+}
+
+/*Benefits*/
+.benefist-description {
+
+}
+
+.benefist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: px;
+    outline: 5px solid rgb(148, 2, 92);
+    outline-offset: -5px;
+    margin: 0;
+    padding: 0;
+}
+
+.benefist-description {
+    width: 571px;
+    height: 379px;
+    outline: 5px solid yellow;
+    outline-offset: -5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.description {
+    
+}
+
+/*advantages*/
+
+.advantages {
+    margin: 0;
+    padding: 0;
+    width: 374px;
+    height: 413px;
+    outline: 5px solid blueviolet;
+    outline-offset: -5px;
+}
+
+.advantages-item {
+    
+    outline: 5px solid rgb(199, 94, 24);
+    outline-offset: -5px;
+}
+
+.advantages-list  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 42px;
+    list-style: none;
+    text-align: center;
+}
+
+
+.parters-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 42px;
 }
 
 /* Button */
@@ -124,7 +284,7 @@ list-style: none;
 
 
 .button-website {
-    font: normal;
+    font: inherit;
     text-align: center;
     color: #FFFFFF;
     vertical-align: middle;
@@ -164,6 +324,26 @@ list-style: none;
 }
 
 /* Footer */
+.write {
+    padding-left: 100px;
+    padding-top: 63px;
+    padding-right: 90px;
+    padding: 84px;
+    width: 761px;
+    height: 353px;
+    left: 240px;
+    top: 1706px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    outline: 5px solid indigo;
+    outline-offset: -5px;
+}
+
+.main-footer {
+    
+
+
+}
 
 .footer-social ul{
     list-style: none;
@@ -199,27 +379,15 @@ list-style: none;
 }
 
 
-.benefist-description {
-    border: 1px solid black;
-    max-width: 651px;
-    max-height: 379;
-    padding-left: 10px;
-}
-.advantages-item {
-    border: 1px solid black;
-    max-width: 78px;
-    max-height: 64;
-    padding-left: 10px;
-    margin-top: 10px;
+/* Grid*/
+.page {
+    height: 100%;
 }
 
-.advantages {
-    border: 1px solid black;
-    max-width: 651px;
-    max-height: 379;
-    padding-left: 10px;
-    margin-top: 10px;
-}
+
+
+
+
 
 .popap {
     border: 1px solid black;
@@ -227,43 +395,4 @@ list-style: none;
     max-height: 379;
     padding-left: 10px;
 }
-
-.parters-list {
-    border: 1px solid black;
-    max-width: 1158px;
-    max-height: 379;
-    padding-left: 10px;
-}
-
-
-.partners-htmlAcademy {
-    border: 1px solid black;
-    max-width: 173px;
-    max-height: 84;
- 
- }
-
- .partners-borodinski {
-    border: 1px solid black;
-    max-width: 173px;
-    max-height: 84;
-}
- 
-
- .partners-pink {
-    border: 1px solid black;
-    max-width: 173px;
-    max-height: 84;
-}
-
- 
-
- .partners-mishka {
-    border: 1px solid black;
-    max-width: 173px;
-    max-height: 84;
-    padding-right: 10px;
- }
- 
- 
 
