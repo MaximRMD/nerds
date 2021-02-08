@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html clss="page" lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Дизайн студия Нердс</title>
@@ -16,6 +16,8 @@
 <body class="page-body">
   
 <header class="main-header">
+  
+  <div class="container">
   <nav class="main-navigation">
   <a href="index.html" class="main-header-logo">
     <img src="img/nerds-logo.svg" width="159.87" Height="65.02" alt="Логотип Нёердс">
@@ -30,21 +32,24 @@
      <img class="cart-icon" src="img/cart-icon.svg" width="15" height="11">
      </a>
     </ul>
+    </div>
    </nav>
-  </div>
+  <!--</div>!-->
   <section>
     <div class="slide">
-      <img class="nerds-slide" src="img/nerds-index-slide1 1.png" width="760" height="431">
-  <h1>Дизайн студия нердс</h1>
-  <h2>Долго, дорого, скрупулезно.</h2>
-  <p>Математически выверенный дизайн<br>
+      
+      <div>
+      <h1 class="glav">Долго, дорого, скрупулезно.</h1>
+  <p class="glav-p">Математически выверенный дизайн<br>
   для вашего сайта или мобильного приложения</p>
   <a  href="card.php?123">
     <button class="button-more" type="button">Узнать больше</button>
   </a>
   </div>
+  <img class="nerds-slide" src="img/nerds-index-slide1 1.png" width="760" height="431">
+  </div>
   </section>
-
+</div>
   </header>
 
 
@@ -179,7 +184,7 @@
     <!--Здесь будет карта-->
   
   </section>
-<div class="conteiner">
+<div class="container">
   <section class="contacts">
     
     <h3>NЁRDS DESIGN STUDIO</h3>
@@ -194,22 +199,39 @@
    </section>
    
  <section class="footer-social">
-   <div>
-<ul>
-  <li>
-    <a class="social-button" href="#">Вконтакте</a>
+   
+  <div class="social-button">
+
+<ul class="social-list">
+  <li class="">
+    <div class="social-item">
+    <a href="#">Вконтакте</a>
+  </div>
   </li>
-  <li>
-    <a class="social-button" href="#">Фейсбук</a>
+  <li class="">
+    <div class="social-item">
+    <a  href="#">Фейсбук</a>
+  </div>
   </li>
-  <li>
-    <a class="social-button" href="#">Инстаграмм</a>
+  <li class="">
+    <div class="social-item">
+    <a  href="#">Инстаграмм</a>
+  </div>
   </li>
+ </div>
 </ul>
+<div class="container-2">
+   <section class="footer-proposal">
+    <h3 class="footer-proposal h3">Давайте дружить это выгодно</h3>
+    <p class="footer-proposal p">Скидка 10% из социальных сетей.</p>
+   </section>
 </div>
 
-<h3>Давайте дружить это выгодно</h3>
-<p>Скидка 10% из социальных сетей.</p>
+
+
+
+
+
 </div>
  </section>
 </footer>

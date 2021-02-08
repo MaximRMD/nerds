@@ -63,16 +63,23 @@ img {
 }
 
 /* Main */
-.conteiner {
+.container {
     width: 300px;
     margin: 0 auto;
-    padding: 500 500px;
+    padding:  500px;
     outline: 5px solid red;
     outline-offset: -5px;
+    
 }
 
 .main-navigation-wrapper {
     
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .site-navigation {
@@ -105,43 +112,58 @@ img {
 }
 
 .main-header {
-    position: absolute;
-    width: 1440px;
-    height: 545px;
     left: 0px;
     top: 0px;
     align-items: center;
-    background: #EEEEEE;
     margin-bottom: 0px;
+    background: #EEEEEE;
     outline: 5px solid green;
     outline-offset: -5px;
+    height: 355px;
     
 }
 
 .main-header-logo {
-    position: absolute;
-    left: 140px;
-    top: 48.98px;
+    
+   /* left: 140px;
+    top: 48.98px;*/
 }
-
+  
 .slide {
-    position: absolute;
-    left: 140px;
-    top: 114px;
-
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-bottom: 40px;
+    
 }
 
 
 .header-div {
 
 }
-
+ 
 .nerds-slide {
+    width: 560px;
+    object-fit: contain;
     position: absolute;
-    width: 760px;
-    height: 431px;
-    margin-left: 537px;
-    margin-top: 114px;
+    right: 0px;
+    bottom: 0px; 
+}
+
+.glav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    
+}
+
+.glav-p{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
 }
 
 .main-header-catalog {
@@ -165,8 +187,8 @@ img {
 /* Offers*/
 
 .offers  {
-    margin-top: 625px;
-    margin-bottom: 80px;
+    padding-top: 80px;
+    
     list-style: none;
 
 }
@@ -194,15 +216,11 @@ img {
 }
 
 .offers-website {
-    
-
-
-    
+        
 }
 
 .offers-illustration {
     
-
 }
 
 /*Benefits*/
@@ -255,9 +273,10 @@ img {
 .advantages-list  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 42px;
+    column-gap: 30px;
     list-style: none;
     text-align: center;
+    padding:0px
 }
 
 
@@ -269,7 +288,7 @@ img {
 
 /* Button */
 
-.button-more,
+
  .contacts-button  {
     font: normal;
     font-size: 16px;
@@ -279,9 +298,25 @@ img {
     border: none;
     text-transform: uppercase;
     vertical-align: middle;
+    
 }
 
+.button-more{
+    background: #FB565A;
+border-radius: 3px;
+font: normal;
+font-size: 16px;
+line-height: 18px;
+color: #ffffff;
+border: none;
+text-transform: uppercase;
+padding-block-start: 17px;
+padding-block-end: 17px;
+padding-left: 54px;
+padding-right: 54px;
+ 
 
+}
 
 .button-website {
     font: inherit;
@@ -291,9 +326,16 @@ img {
     text-transform: uppercase;
     background-color: #FB565A;
     border: none;
+    padding-block-start: 17px;
+    padding-block-end: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 3px;
+    
 }
 
 .button-applications {
+    border-radius: 3px;
     font: inherit;
     text-align: center;
     color: #FFFFFF;
@@ -301,9 +343,14 @@ img {
     background-color: #00CA74;
     border: none;
     text-transform: uppercase;
+    padding-block-start: 17px;
+    padding-block-end: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .button-presentation {
+    border-radius: 3px;
     font: inherit;
     text-align: center;
     color: #FFFFFF;
@@ -311,6 +358,10 @@ img {
     background-color: #EFC849;
     border: none;
     text-transform: uppercase;
+    padding-block-start: 17px;
+    padding-block-end: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .button-send {
@@ -341,8 +392,6 @@ img {
 
 .main-footer {
     
-
-
 }
 
 .footer-social ul{
@@ -355,8 +404,46 @@ img {
 
 /* Social button*/
 
-.social-button {
+.social-item a {
     color: black;
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100px;
+    
+
+}
+
+.footer-proposal    {
+    border: 5px solid green;
+    display: grid;
+    grid-template-columns:  1fr;
+    text-align: center;
+    
+    
+}
+.footer-proposal h3 {
+    font-size: 36px;
+    font-family: inherit;
+}
+
+.footer-proposal p {
+    font-size: 16px;
+    font-family: inherit;
+    font-style: normal;
+    
+}
+
+
+.social-list {
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    float: left;
+    margin-left: 140px;
+    padding-left: 0px;
+
+    
 }
 
 .contacts-paragraph,
@@ -365,6 +452,13 @@ img {
 }
 
 /*Catalog*/
+.glav-h1 {
+    font-family: inherit;
+    text-align: center;
+    font-size: 55px;
+    font-style: normal;
+    padding-top: 92px;
+}
 
 .radio li, 
 .checkbox li {
@@ -377,22 +471,9 @@ img {
 .checkbox-input-checked {
 
 }
-
-
-/* Grid*/
-.page {
-    height: 100%;
-}
-
-
-
-
-
-
 .popap {
     border: 1px solid black;
     max-width: 651px;
     max-height: 379;
     padding-left: 10px;
 }
-
