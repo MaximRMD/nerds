@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="page" lang="ru"></html>
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Дизайн студия Нердс</title>
-    <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 400; 700 & display = swap "rel =" stylesheet ">
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="normalize.css" href="Normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +14,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-         <img src="img/nerds-logo.svg" width="159.87" Height="65.02" alt="Логотип Нёердс">
+         <img src="img/nerds-logo.svg" width="159" Height="65" alt="Логотип Нёердс">
           </a>
             <div class="main-navigation-wrapper">
              <ul class="site-navigation">
@@ -36,19 +36,20 @@
     </header>
 
  <main class="container">
-  <div class="cost">
-   <section>
-    <h2>Фильтр товаров</h2>
+   <!--<div class="cost">-->
+   <section  class="filter">
+    <!--<h2>Фильтр товаров</h2>!-->
+    <!--<div  class="filter">!-->
+    <form action="https://echo.htmlacademy.ru" method="post"></form>
     <fieldset>
-      <form action="https://echo.htmlacademy.ru" method="post"></form>
       <legend>Стоимость:</legend>
      <p>от-0 до-15 000</p>
     
       <br>
     </fieldset>
-  </div>
-  <div class="grig">
-        <fieldset class="">    
+  
+  <!--<div class="grig">!-->
+        <fieldset class="grig">    
         <legend>Сетка:</legend>
       <ul class="radio">
      <li>
@@ -67,9 +68,9 @@
     </li>
     </ul>
     </fieldset>
-  </div>
-  <div class="features">
-    <fieldset class=>
+   <!--</div>!-->
+  <!--<div class="features">!-->
+    <fieldset  class="features">
     <legend>Особенности:</legend>
     <ul class="checkbox">
         <li>
@@ -89,69 +90,70 @@
             <label for="filter-Галерея">Галерея</label>
         </li>
         <li>
-            <input class="checkbox-input" type="checkbox" name=" Корзина" id="filter- Корзина">
+            <input class="checkbox-input" type="checkbox" name="Корзина" id="filter- Корзина">
             <label for="filter- Корзина">Корзина</label>
         </li>
-    </fieldset>
-    </div>
-    <input class="input-show" type="submit" value="Показать">
+        
     </ul>
+    </fieldset>
+    <button type="submit" class="input-show">Показать</button>
+     <!--</div>!-->
 </form>
-
+<!--</div>!-->        <!--<input class="input-show" type="submit" value="Показать">!-->
    </section>
 
-   <section>
-    <div class="sorting"> 
+   <section class="sorting">
+    <!--<div class="sorting"> !--> 
     <h2>Сортировать:</h2>
       <p>По цене</p>
       <p>По типу</p>
       <p>По названию</p>
-    </div>
-      
+    </section>
+    <section class="gallery">
     <h2>Галлерея</h2>
-    <div class="gallery-list">
-          <ul>
-            <li>
+    <!--<div class="gallery">!--> 
+          <ul  class="gallery-list">
+            <li class="gallary-item">
           <a href="#">
-          <img src="" width="" Height="" alt=""> Sedona
+          <img src="img/catalog-img-sedona1.jpg" width="359" Height="578" alt=""> 
           </a>
           </li>
 
-          <li>
+          <li class="gallary-item">
           <a href="#">
-          <img src="" width="" Height="" alt=""> Pink
+          <img src="img/catalog-img-pink1.jpg" width="359" Height="578" alt=""> 
           </a>
           </li>
 
-          <li>
+          <li class="gallary-item">
           <a href="#">
-          <img src="" width="" Height="" alt="">Borodinski
+          <img src="img/catalog-img-barbershop1.jpg" width="359" Height="578" alt="">
           </a>
           </li>
 
-          <li>
+          <li class="gallary-item">
           <a href="#">
-          <img src="" width="" Height="" alt="">Mishka
+          <img src="img/catalog-img-mishka1.jpg" width="359" Height="578" alt="">
           </a>
           </li>
 
-          <li>
+          <li class="gallary-item">
           <a href="#">
-          <img src="" width="" Height="" alt="">A+
+          <img src="img/catalog-img-aplus1.jpg" width="359" Height="578" alt="">
           </a>
           </li>
 
-          <li>
+          <li class="gallary-item">
           <a href="#">
-          <img src="" width="" Height="" alt="">Квас
+          <img src="img/catalog-img-kvast1.jpg" width="359" Height="578" alt="">
           </a>
           </li>
           </ul>
-     
-    </div>
+     </section>
+    <!--</div>!--> 
 
-     <div calss="pagination"> 
-     <ul>
+    <section>
+     <ul class="pagination">
          <li>
              <a>1</a>
          </li>
@@ -161,20 +163,15 @@
          <li>
              <a href="#">3</a>
          </li>
-         <button type="button">Следующая</button>
-        </div>
+         <button class="button-next" type="button">Следующая</button>
      </ul>
+
     </section>
-       <section>
-       
-         <!--Здесь будет карта-->
-       
-       </section>
 </main>
 
 <footer class="main-footer">
   <section>
-
+    <img class="map" src="img/map1.png" width="1440" height="416" alt="">
     <!--Здесь будет карта-->
   
   </section>
@@ -193,34 +190,32 @@
        </p>
      </section>
    
-   <section class="footer-social">
+     <section class="footer-social container">
    
-    <div class="social-button">
-  
-  <ul class="social-list">
-    <li class="">
-      <div class="social-item">
-      <a href="#">Вконтакте</a>
+      <div class="social-button">
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="#">Вконтакте</a>
+      </li>
+      <li class="social-item">
+        <a  href="#">Фейсбук</a>
+      </li>
+      <li class="social-item">
+        <a  href="#">Инстаграмм</a>
+      </li>
+     </ul>
     </div>
-    </li>
-    <li class="">
-      <div class="social-item">
-      <a  href="#">Фейсбук</a>
+    
+    <div class="container-2">
+       <section class="footer-proposal">
+        <h3>Давайте дружить это выгодно</h3>
+        <p>Скидка 10% из социальных сетей.</p>
+       </section>
     </div>
-    </li>
-    <li class="">
-      <div class="social-item">
-      <a  href="#">Инстаграмм</a>
-    </div>
-    </li>
-   </div>
-  </ul>
-  <div class="container-2">
-     <section class="footer-proposal">
-      <h3 class="footer-proposal h3">Давайте дружить это выгодно</h3>
-      <p class="footer-proposal p">Скидка 10% из социальных сетей.</p>
+    
+    
+    
      </section>
-  </div>
 </footer>
 
 </body>

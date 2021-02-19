@@ -28,7 +28,7 @@
 
 /* Global*/
 .page-body {
-    min-width: 960px;
+    min-width: 1157px;
     margin: 0%;
     padding: 0%;
     font-family: "roboto";
@@ -64,12 +64,9 @@ img {
 
 /* Main */
 .container {
-    width: 300px;
+    min-width: 1157px;
     margin: 0 auto;
     padding:  500px;
-    outline: 5px solid red;
-    outline-offset: -5px;
-    
 }
 
 .main-navigation-wrapper {
@@ -82,17 +79,23 @@ img {
     justify-content: space-between;
 }
 
+.site-navigation-cart {
+    grid-column-start: 7;
+}
+
 .site-navigation {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 0px;
+    margin-block-start: 75px;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 45px;
-    font-size: 16px;
     line-height: 30px;
     color: var(--basic-black--);
     background-color: transparent;
-    outline: 5px solid rgb(0, 129, 151);
-    outline-offset: -5px;
     list-style: none;
     
     
@@ -117,16 +120,13 @@ img {
     align-items: center;
     margin-bottom: 0px;
     background: #EEEEEE;
-    outline: 5px solid green;
-    outline-offset: -5px;
-    height: 355px;
+    min-height: 355px;
     
 }
 
 .main-header-logo {
     
-   /* left: 140px;
-    top: 48.98px;*/
+   margin-block-start: 49px;
 }
   
 .slide {
@@ -144,7 +144,7 @@ img {
 }
  
 .nerds-slide {
-    width: 560px;
+    width: 760px;
     object-fit: contain;
     position: absolute;
     right: 0px;
@@ -181,6 +181,7 @@ line-height: 24px;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    
 }
 
 
@@ -232,17 +233,13 @@ line-height: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: px;
-    outline: 5px solid rgb(148, 2, 92);
-    outline-offset: -5px;
-    margin: 0;
+    margin-top: 80px;
     padding: 0;
 }
 
 .benefist-description {
     width: 571px;
-    height: 379px;
-    outline: 5px solid yellow;
-    outline-offset: -5px;
+    height: 379px; 
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -256,18 +253,16 @@ line-height: 24px;
 /*advantages*/
 
 .advantages {
-    margin: 0;
+    margin-left: 149px;
     padding: 0;
     width: 374px;
     height: 413px;
-    outline: 5px solid blueviolet;
-    outline-offset: -5px;
+   
 }
 
 .advantages-item {
     
-    outline: 5px solid rgb(199, 94, 24);
-    outline-offset: -5px;
+ 
 }
 
 .advantages-list  {
@@ -279,11 +274,20 @@ line-height: 24px;
     padding:0px
 }
 
+.map {
+    width: 100%;
+    padding-top: 126px;
+}
 
 .parters-list {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 126px;
+
+
+ /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 42px;
+    column-gap: 42px;*/
 }
 
 /* Button */
@@ -298,11 +302,16 @@ line-height: 24px;
     border: none;
     text-transform: uppercase;
     vertical-align: middle;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-left: 44px;
+    padding-right: 44px;
+    
     
 }
 
 .button-more{
-    background: #FB565A;
+background: #FB565A;
 border-radius: 3px;
 font: normal;
 font-size: 16px;
@@ -314,8 +323,27 @@ padding-block-start: 17px;
 padding-block-end: 17px;
 padding-left: 54px;
 padding-right: 54px;
- 
+display: inline-block;
+margin-block-start: 38px;
+margin-block-end: 80px;
 
+}
+
+.input-show {
+    background: #EEEEEE;
+    border-radius: 3px;
+    font: normal;
+    font-size: 16px;
+    color: #000000;
+    border: none;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-left: 88px;
+    padding-right: 88px;
+    display: inline-block;
+    margin-block-start: 50px;
+    margin-right: 0px;
+    width: 260px;
 }
 
 .button-website {
@@ -331,6 +359,7 @@ padding-right: 54px;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 3px;
+    
     
 }
 
@@ -386,12 +415,10 @@ padding-right: 54px;
     top: 1706px;
     background: #FFFFFF;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-    outline: 5px solid indigo;
-    outline-offset: -5px;
 }
 
 .main-footer {
-    
+    background-image: url("img/map1.png");
 }
 
 .footer-social ul{
@@ -399,23 +426,34 @@ padding-right: 54px;
 }
 
 .footer-social {
+
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 /* Social button*/
 
-.social-item a {
-    color: black;
-    border: 5px solid red;
-    display: grid;
+.social-item  {
+    margin-left: 9px;
+    height: 81px;
+    width: 81px;
+    border-radius: 50%;
+    background-color: #E1E1E1;
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+    background-image: url (".../img/shape.png");
+    display: block;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100px;
+   
     
 
 }
 
 .footer-proposal    {
-    border: 5px solid green;
     display: grid;
     grid-template-columns:  1fr;
     text-align: center;
@@ -436,13 +474,13 @@ padding-right: 54px;
 
 
 .social-list {
-    border: 5px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     float: left;
-    margin-left: 140px;
     padding-left: 0px;
-
+    background-image: 
     
 }
 
@@ -465,7 +503,7 @@ padding-right: 54px;
     font: normal;
     color:#283136;
     list-style: none;
-
+    margin-bottom: 20px;
 }
 
 .checkbox-input-checked {
@@ -476,4 +514,96 @@ padding-right: 54px;
     max-width: 651px;
     max-height: 379;
     padding-left: 10px;
+}
+
+
+.cost {
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.gallary-item {
+    width: 359px;
+    min-height: 578px;
+    box-shadow: #666666;
+}
+
+.gallery-list{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 55px;
+
+    /*display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    white-space: nowrap;
+    list-style: none;
+    margin-top: px;
+    margin-left: px;*/
+}
+
+.filter{
+    margin-top: 55px;
+     outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  width: 260px;
+}
+
+.filter legend {
+    margin-bottom: ;
+    font-size: 18px;
+}
+
+.fieldset ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    line-height: 19px;
+}
+
+.pagination {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    float: left;
+    padding-left: 0px;
+    list-style: none;
+    border: 5px solid red;
+}
+
+.button-next {
+    background: #EEEEEE;
+    border-radius: 3px;
+    font: normal;
+    font-size: 16px;
+    color: #000000;
+    border: none;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-left: 88px;
+    padding-right: 88px;
+    display: inline-block;
+    margin-right: 0px;
+    width: 260px;
+}
+
+.filter fieldset {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 47px;
+    border: none;
+
+}
+.cost {
+    border: 5px solid red;
+    width: 208px;
+    
 }
