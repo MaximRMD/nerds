@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Дизайн студия Нердс</title>
-    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="normalize.css" href="Normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Дизайн студия Нердс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="normalize.css" href="Normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -14,206 +15,234 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-         <img src="img/nerds-logo.svg" width="159" Height="65" alt="Логотип Нёердс">
-          </a>
-            <div class="main-navigation-wrapper">
-             <ul class="site-navigation">
-             <li><a  href="blank.html">Студия</a></li> 
-             <li><a  href="blank.html">Киенты</a></li>
-             <li><a  href="blank.html">Контакты</a></li>
-             <li><a  href="catalog.html">Магазин</a></li>
-             <a href="blank.html" class="cart">Корзина
-             <img class="cart-icon" src="img/cart-icon.svg" width="15" height="11" alt="">
-             </a>
-           </ul>
-         </div>
-       </nav>
-       </div>
-        <h1 class="glav-h1">Магазин готовых шаблонов</h1>
-    </header>
+          <img src="img/nerds-logo.svg" width="159" Height="65" alt="Логотип Нёердс">
+        </a>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Киенты</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <a href="blank.html" class="cart">Корзина
+              <img class="cart-icon" src="img/cart-icon.svg" width="15" height="11" alt="">
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <h1 class="glav-h1">Магазин готовых шаблонов</h1>
+  </header>
 
- <main class="container">
-   <!--<div class="cost">-->
-   <section  class="filter">
-    <!--<h2>Фильтр товаров</h2>!-->
-    <!--<div  class="filter">!-->
-    <form action="https://echo.htmlacademy.ru" method="post"></form>
-    <fieldset>
-      <legend>Стоимость:</legend>
-     <p>от-0 до-15 000</p>
-    
-      <br>
-    </fieldset>
-  
-  <!--<div class="grig">!-->
-        <fieldset class="grig">    
+  <main class="container flexbox">
+    <!--<div class="cost">-->
+    <section class="filter">
+      <!--<h2>Фильтр товаров</h2>!-->
+      <!--<div  class="filter">!-->
+      <form action="https://echo.htmlacademy.ru" method="post"></form>
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <p>от-0 до-15 000</p>
+      </fieldset>
+
+      <!--<div class="grig">!-->
+      <fieldset class="grig">
         <legend>Сетка:</legend>
-      <ul class="radio">
-     <li>
-         <input class="radio-input" type="radio" name="Адаптивная" id="filter-Адаптивная" checked>
-         <label for="filter-Адаптивная">Адаптивная</label>
-     </li>
+        <ul class="radio">
+          <li>
+            <input class="radio-input" type="radio" name="Адаптивная" id="filter-Адаптивная" checked>
+            <label for="filter-Адаптивная">Адаптивная</label>
+          </li>
 
-     <li>
-         <input class="radio-input" type="radio" name="Фиксированная" id="filter-Фиксированная">
-         <label for="filter-Фиксированная">Фиксированная</label>
-    </li>
+          <li>
+            <input class="radio-input" type="radio" name="Фиксированная" id="filter-Фиксированная">
+            <label for="filter-Фиксированная">Фиксированная</label>
+          </li>
 
-    <li>
-        <input class="radio-input" type="radio" name="Резиновая" id="filter-Резиновая">
-        <label for="filter-Резиновая">Резиновая</label>
-    </li>
-    </ul>
-    </fieldset>
-   <!--</div>!-->
-  <!--<div class="features">!-->
-    <fieldset  class="features">
-    <legend>Особенности:</legend>
-    <ul class="checkbox">
-        <li>
+          <li>
+            <input class="radio-input" type="radio" name="Резиновая" id="filter-Резиновая">
+            <label for="filter-Резиновая">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!--</div>!-->
+      <!--<div class="features">!-->
+      <fieldset class="features">
+        <legend>Особенности:</legend>
+        <ul class="checkbox">
+          <li>
             <input class="checkbox-input-checked" type="checkbox" name="Слайдер" id="filter-слайдер" checked>
             <label for="filter-слайдер">Слайдер</label>
-        </li>
-        <li>
+          </li>
+          <li>
             <input class="checkbox-input" type="checkbox" name="Блок преимуществ" id="filter-Блок преимуществ">
             <label for="filter-Блок преимуществ">Блок преимуществ</label>
-        </li>
-        <li>
+          </li>
+          <li>
             <input class="checkbox-input-checked" type="checkbox" name="Новости" id="filter-Новости" checked>
             <label for="filter-Новости">Новости</label>
-        </li>
-        <li>
+          </li>
+          <li>
             <input class="checkbox-input" type="checkbox" name="Галерея" id="filter-Галерея">
             <label for="filter-Галерея">Галерея</label>
-        </li>
-        <li>
+          </li>
+          <li>
             <input class="checkbox-input" type="checkbox" name="Корзина" id="filter-Корзина">
             <label for="filter-Корзина">Корзина</label>
+          </li>
+
+        </ul>
+      </fieldset>
+      <button type="submit" class="input-show">Показать</button>
+      <!--</div>!-->
+
+      <!--</div>!-->
+      <!--<input class="input-show" type="submit" value="Показать">!-->
+    </section>
+
+    <!--<section class="sorting">!-->
+    <!-- !-->
+    <section class="gallery">
+      <div class="sorting">
+        <h2>Сортировать:</h2>
+        <p>По цене</p>
+        <p>По типу</p>
+        <p>По названию</p>
+      </div>
+      <!--</section>!-->
+
+      <!--<h2>Галлерея</h2>!-->
+      <!--<div class="gallery">!-->
+      <ul class="gallery-list">
+        <li class="gallery-item">
+          <a href="#">
+            <svg class="gallery-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"
+              >
+              <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z">
+            </svg>
+            <img src="img/catalog-img-sedona1.jpg" width="359" Height="578" alt="">
+          </a>
         </li>
-        
-    </ul>
-    </fieldset>
-    <button type="submit" class="input-show">Показать</button>
-     <!--</div>!-->
 
-<!--</div>!-->        <!--<input class="input-show" type="submit" value="Показать">!-->
-   </section>
-
-   <!--<section class="sorting">!--> 
-    <!-- !--> 
-     <section class="gallery">
-       <div class="sorting"> 
-    <h2>Сортировать:</h2>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По названию</p>
-       </div>
-    <!--</section>!--> 
-    
-    <!--<h2>Галлерея</h2>!--> 
-    <!--<div class="gallery">!--> 
-          <ul  class="gallery-list">
-            <li class="gallary-item">
+        <li class="gallery-item">
           <a href="#">
-          <img src="img/catalog-img-sedona1.jpg" width="359" Height="578" alt=""> 
+            <svg class="gallery-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40" >
+              <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z"
+                />
+            </svg>
+            <img src="img/catalog-img-pink1.jpg" width="359" Height="578" alt="">
           </a>
-          </li>
+        </li>
 
-          <li class="gallary-item">
+        <li class="gallery-item">
           <a href="#">
-          <img src="img/catalog-img-pink1.jpg" width="359" Height="578" alt=""> 
+            <svg class="gallery-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40" >
+              <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z"
+                 />
+            </svg>
+            <img src="img/catalog-img-barbershop1.jpg" width="359" Height="578" alt="">
           </a>
-          </li>
+        </li>
 
-          <li class="gallary-item">
+        <li class="gallery-item">
           <a href="#">
-          <img src="img/catalog-img-barbershop1.jpg" width="359" Height="578" alt="">
+            <svg class="gallery-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40" >
+              <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z"
+                />
+            </svg>
+            <img src="img/catalog-img-mishka1.jpg" width="359" Height="578" alt="">
           </a>
-          </li>
+        </li>
 
-          <li class="gallary-item">
+        <li class="gallery-item">
           <a href="#">
-          <img src="img/catalog-img-mishka1.jpg" width="359" Height="578" alt="">
+            <svg class="gallery-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40" >
+              <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z"
+                 />
+            </svg>
+            <img src="img/catalog-img-aplus1.jpg" width="359" Height="578" alt="">
           </a>
-          </li>
+        </li>
 
-          <li class="gallary-item">
+        <li class="gallery-item">
           <a href="#">
-          <img src="img/catalog-img-aplus1.jpg" width="359" Height="578" alt="">
+            <svg class="gallery-header" xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40" >
+              <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z"
+                 />
+            </svg>
+            <img src="img/catalog-img-kvast1.jpg" width="359" Height="578" alt="">
           </a>
+        </li>
+      </ul>
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li>
+            <a class="pagination-number">1</a>
           </li>
+          <li>
+            <a class="pagination-number" href="#">2</a>
+          </li>
+          <li>
+            <a class="pagination-number" href="#">3</a>
+          </li>
+          <button class="button-next" type="button">Следующая</button>
+        </ul>
 
-          <li class="gallary-item">
-          <a href="#">
-          <img src="img/catalog-img-kvast1.jpg" width="359" Height="578" alt="">
-          </a>
-          </li>
-          </ul>
-          <div class="pagination">
- <ul class="pagination-list">
-         <li>
-             <a>1</a>
-         </li>
-         <li>
-             <a href="#">2</a>
-         </li>
-         <li>
-             <a href="#">3</a>
-         </li>
-        <button class="button-next" type="button">Следующая</button>
-     </ul>
- 
-</div>
-     </section>
-    <!--</div>!--> 
+      </div>
+    </section>
+    <!--</div>!-->
 
     <!--<section>!-->
-    
+
     <!--</section>!-->
-</main>
+  </main>
 
-<footer class="main-footer">
-  <section>
-    <img class="map" src="img/map1.png" width="1440" height="416" alt="">
-    <!--Здесь будет карта-->
-  
-  </section>
+  <footer class="main-footer">
+    <section>
+      <img class="map" src="img/map1.png" width="1440" height="416" alt="">
+      <!--Здесь будет карта-->
 
-  <div class="container">
-    <section class="contacts">
-      <h3>NЁRDS DESIGN STUDIO</h3>
-       <p class="contacts-paragraph">191186, Санкт-Петербург,<br>
+    </section>
+
+    <div class="container">
+      <section class="contacts">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p class="contacts-paragraph">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная. д. 19/8<br>
           Тел. <a class="contacts-phone" href="tel:+78122757575">+7(812)-275-75-75</a><br>
-          </p>
-             <a href="#"
-              class="contacts-button">Напишите нам
-             </a>
-     </section>
-     </div>
-   
-     <section class="footer-social container">
-      <div class="social-button">
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="#">Вконтакте</a>
-      </li>
-      <li class="social-item">
-        <a  href="#">Фейсбук</a>
-      </li>
-      <li class="social-item">
-        <a  href="#">Инстаграмм</a>
-      </li>
-     </ul>
+        </p>
+        <a href="#" class="contacts-button">Напишите нам
+        </a>
+      </section>
     </div>
-    
-    <div class="container-2">
-       <section class="footer-proposal">
-        <h3>Давайте дружить это выгодно</h3>
-        <p>Скидка 10% из социальных сетей.</p>
-       </section>
+
+    <section class="footer-social container">
+      <div class="social-button">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#">Вконтакте</a>
+          </li>
+          <li class="social-item">
+            <a href="#">Фейсбук</a>
+          </li>
+          <li class="social-item">
+            <a href="#">Инстаграмм</a>
+          </li>
+        </ul>
       </div>
-     </section>
-</footer>
+
+      <div class="container-2">
+        <section class="footer-proposal">
+          <h3>Давайте дружить это выгодно</h3>
+          <p>Скидка 10% из социальных сетей.</p>
+        </section>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>
