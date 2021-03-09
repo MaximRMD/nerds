@@ -104,7 +104,7 @@ li {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: #FB565A;
+  color: #FB565A;
 
 }
 
@@ -160,7 +160,7 @@ li {
 .main-background {}
 
 .sorting {
-  
+
   display: flex;
   justify-content: space-around;
 }
@@ -220,7 +220,8 @@ li {
 /*Benefits*/
 .benefist-description {}
 
-.benefist {box-sizing: border-box;
+.benefist {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: px;
@@ -240,22 +241,23 @@ li {
 }
 
 .description {
-    padding-bottom: 32px
+  padding-bottom: 32px
 }
 
 
 .services-list {
-    padding-top:40px;
+  padding-top: 40px;
 }
-.services-item{ 
-    margin-bottom: 20px;
-    padding-top:23px;
+
+.services-item {
+  margin-bottom: 20px;
+  padding-top: 23px;
 }
 
 /*advantages*/
 
-.container-img{
-   padding-bottom: 373px;
+.container-img {
+  padding-bottom: 37px;
 }
 
 .advantages {
@@ -267,22 +269,32 @@ li {
 }
 
 .advantages-item h3 {
-    font-size: 45px;
-    
+  font-size: 45px;
+
+}
+
+.advantages-container {
+  /*outline: #283136 solid 5px;*/
+  display: block;
 }
 
 .advantages-item {
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /*outline: #00CA74 solid 5px;*/
+  padding: 0px;
+  margin: 0px;
 }
+
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 30px;
+  column-gap: 22px;
   list-style: none;
-  text-align: center;
+  /*text-align: center;*/
   padding: 0px;
+  /*outline: #EFC849 solid 5px;*/
 }
 
 section.main-footer-container {}
@@ -306,8 +318,8 @@ section.contacts {
   bottom: 0px;
 }
 
-.parters-list {
-
+.partners-list {
+  
   display: flex;
   justify-content: space-between;
   margin-top: 126px;
@@ -318,6 +330,8 @@ section.contacts {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 42px;*/
 }
+
+
 
 /* Button */
 
@@ -471,10 +485,11 @@ section.contacts {
 
 }
 
-.footer-social-container{
-    padding-top: 150px;
- position: relative;
+.footer-social-container {
+  padding-top: 150px;
+  position: relative;
 }
+
 /* Social button*/
 
 .social-item {
@@ -488,10 +503,11 @@ section.contacts {
   overflow: hidden;
   display: block;
   grid-template-columns: 1fr 1fr 1fr;
-
+  outline: #FB565A 5px solid;
 
 
 }
+
 
 .footer-proposal {
   display: grid;
@@ -567,7 +583,7 @@ section.contacts {
 .gallery {
   max-width: 760px;
   margin-top: 55px;
-  
+
 }
 
 .gallery-item {
@@ -612,31 +628,31 @@ section.contacts {
   line-height: 19px;
 }
 
-.pagination-number{
-    background: #EEEEEE;
-    border-radius: 3px;
-    font: normal;
-    font-size: 16px;
-    color: #000000;
-    border: none;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: inline-block;
-    margin-right: 11px;
-    width: 50px;
-    box-sizing: border-box;
+.pagination-number {
+  background: #EEEEEE;
+  border-radius: 3px;
+  font: normal;
+  font-size: 16px;
+  color: #000000;
+  border: none;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-right: 11px;
+  width: 50px;
+  box-sizing: border-box;
 }
 
 .pagination-list {
-    
+
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
   padding-left: 0px;
   list-style: none;
-  
+
 }
 
 .button-next {
@@ -664,7 +680,7 @@ section.contacts {
 }
 
 .cost {
- 
+
   width: 208px;
 
 }
@@ -677,6 +693,19 @@ section.contacts {
 
 .gallery-item:hover .gallery-header {
   opacity: 1;
+}
+
+
+.partners-group {
+  opacity:0.2;
+}
+
+.partners-a:hover .partners-group {
+  opacity: 1;
+}
+
+/*.Rectangle{
+  margin-top: 90px;
 }
 
 /*, ::after, ::before {
