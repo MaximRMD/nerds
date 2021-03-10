@@ -90,13 +90,14 @@ img {
   color: var(--basic-black--);
   background-color: transparent;
   list-style: none;
-
+  
 
 }
 
 .site-navigation a,
 li {
   color: var(--basic-black--);
+transition: 0.15s;
 
 
 
@@ -324,7 +325,7 @@ section.contacts {
   justify-content: space-between;
   margin-top: 126px;
   margin-bottom: 80px;
-
+  
 
   /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -349,10 +350,11 @@ section.contacts {
   padding-block-end: 16px;
   padding-left: 44px;
   padding-right: 44px;
+  transition: 0.25s;
+}
 
-
-
-
+.contacts-button:hover{
+  background-color:#E74246;
 }
 
 .button-more {
@@ -371,6 +373,7 @@ section.contacts {
   display: inline-block;
   margin-block-start: 38px;
   margin-block-end: 80px;
+  transition: 0.25s;
 
 }
 
@@ -389,6 +392,15 @@ section.contacts {
   margin-block-start: 50px;
   margin-right: 0px;
   width: 260px;
+  transition: 0.25s;
+}
+.input-show:hover{
+  background-color: #DFDFDF;
+}
+
+.nerds-logo:hover {
+  opacity: 70%;
+
 }
 
 .button-website {
@@ -404,7 +416,7 @@ section.contacts {
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 3px;
-
+transition: 0.25s;
 
 }
 
@@ -421,6 +433,12 @@ section.contacts {
   padding-block-end: 17px;
   padding-left: 40px;
   padding-right: 40px;
+  transition: 0.25s;
+  
+}
+
+.button-applications:hover{
+  background-color: #00BC6C;
 }
 
 .button-presentation {
@@ -436,6 +454,10 @@ section.contacts {
   padding-block-end: 17px;
   padding-left: 40px;
   padding-right: 40px;
+  transition: 0.25s;
+}
+.button-presentation:hover{
+background-color: #EAB534;
 }
 
 .button-send {
@@ -643,7 +665,12 @@ section.contacts {
   margin-right: 11px;
   width: 50px;
   box-sizing: border-box;
+  transition: 0.25s;
 }
+.pagination-number:hover{
+  background-color:#DFDFDF;
+}
+
 
 .pagination-list {
 
@@ -669,7 +696,12 @@ section.contacts {
   display: inline-block;
   margin-right: 0px;
   width: 260px;
+transition: 0.25s;
 }
+.button-next:hover{
+  background-color:#DFDFDF;
+}
+
 
 .filter fieldset {
   padding: 0px;
@@ -678,6 +710,7 @@ section.contacts {
   border: none;
 
 }
+
 
 .cost {
 
@@ -689,6 +722,7 @@ section.contacts {
   fill: #4D4D4D;
   opacity: 0.12;
   vertical-align: top;
+  transition: 0.25s;
 }
 
 .gallery-item:hover .gallery-header {
@@ -698,12 +732,20 @@ section.contacts {
 
 .partners-group {
   opacity:0.2;
+  transition: 0.25s;
 }
 
 .partners-a:hover .partners-group {
   opacity: 1;
 }
 
+.button-more:hover {
+  background-color: #E74246; 
+}
+
+.button-website:hover{
+  background-color: #E74246;
+}
 /*.Rectangle{
   margin-top: 90px;
 }
