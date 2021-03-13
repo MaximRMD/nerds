@@ -36,7 +36,6 @@
   line-height: 24px;
   font-weight: 700;
   color: var(--basic-black);
-  text-transform: uppercase;
   background-color: var(--basic-white);
   background-image: none;
   background-position: top center;
@@ -70,6 +69,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-transform: uppercase;
 }
 
 .site-navigation-cart {
@@ -107,6 +107,13 @@ li {
 .site-navigation a:focus {
   color: #FB565A;
 
+}
+
+.site-navigation a:active,
+.site-navigation a:focus{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom:#FB565A 2px solid ;
+  padding-bottom: 12px;
 }
 
 .cart-icon{
@@ -150,6 +157,8 @@ li {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin-top: 70px;
+  margin-bottom: 27;
 
 }
 
@@ -158,6 +167,7 @@ li {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom:0px;
 }
 
 .main-header-catalog {}
@@ -223,7 +233,6 @@ li {
 .offers-illustration {}
 
 /*Benefits*/
-.benefist-description {}
 
 .benefist {
   box-sizing: border-box;
@@ -232,26 +241,40 @@ li {
   column-gap: px;
   margin-top: 80px;
   padding: 0;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE ;
+  padding-top: 73px;
+  padding-bottom: 73px;
 }
 
 .benefist-description {
   width: 571px;
-  max-height: 379px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   padding: 0px;
   margin: 0px;
+  
 }
 
 .description {
-  padding-bottom: 32px
+  padding-bottom: 32px;
+  text-transform: uppercase;
 }
 
 
 .services-list {
   padding-top: 40px;
+}
+
+.services-list h2{
+  text-transform: uppercase;
+}
+
+.paragraph-list{
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 .services-item {
@@ -324,11 +347,15 @@ section.contacts {
 }
 
 .partners-list {
+border-bottom: solid 2px #EEEEEE;
 
   display: flex;
   justify-content: space-between;
-  margin-top: 126px;
+  margin-top: 0px;
   margin-bottom: 80px;
+  padding-bottom: 44px;
+  padding-top: 44px ;
+  
 
 
   /* display: grid;
@@ -336,8 +363,19 @@ section.contacts {
     column-gap: 42px;*/
 }
 
+.partners-borodinski{
+  border-left: 2px solid #EEEEEE;
+  padding-left: 45px;
+}
 
+.partners-pink{
+  border-left: 2px solid #EEEEEE;
+  padding-left: 45px;
+}
 
+.partners-mishka{ 
+  border-left: 2px solid #EEEEEE;
+  padding-left: 45px;}
 /* Button */
 
 
@@ -364,7 +402,6 @@ section.contacts {
 .button-more {
   background: #FB565A;
   border-radius: 3px;
-  font: normal;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -376,9 +413,19 @@ section.contacts {
   padding-right: 54px;
   display: inline-block;
   margin-block-start: 38px;
-  margin-block-end: 80px;
+  margin-block-end: 39px;
   transition: 0.25s;
 
+}
+
+.button-more:hover {
+  background-color: #E74246;
+}
+
+.button-more:active{
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+ background-color: #D7373B; 
+ color: rgba(255, 255, 255, 0.3);
 }
 
 .input-show {
@@ -404,11 +451,18 @@ section.contacts {
 }
 
 .nerds-logo:hover {
-  opacity: 70%;
+  transition: 0.25s;
+  opacity: 0.7;
 
 }
 
+.nerds-logo:active{
+  opacity: 0.3;
+  transition: 0.20s;
+} 
+
 .button-website {
+  text-transform: uppercase;
   font: inherit;
   text-align: center;
   color: #FFFFFF;
@@ -425,7 +479,19 @@ section.contacts {
 
 }
 
+.button-website:hover {
+  background-color: #E74246;
+}
+
+.button-website:active{
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: #D7373B;
+  color: rgba(255, 255, 255, 0.3);
+  
+}
+
 .button-applications {
+  text-transform: uppercase;
   border-radius: 3px;
   font: inherit;
   text-align: center;
@@ -446,7 +512,14 @@ section.contacts {
   background-color: #00BC6C;
 }
 
+.button-applications:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: #00AA62;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-presentation {
+  text-transform: uppercase;
   border-radius: 3px;
   font: inherit;
   text-align: center;
@@ -466,6 +539,12 @@ section.contacts {
   background-color: #EAB534;
 }
 
+.button-presentation:active{
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: #E5A722;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-send {
   font: inherit;
   text-align: center;
@@ -475,19 +554,22 @@ section.contacts {
   border: none;
   text-transform: uppercase;
 }
+.offers-item h3{
+  text-transform: uppercase;
+}
 
 /* Footer */
 .write {
   padding-left: 100px;
   padding-top: 63px;
-  padding-right: 90px;
+  padding-right: 100px;
   padding: 84px;
   max-width: 761px;
-  height: 353px;
   left: 240px;
   top: 1706px;
   background: #FFFFFF;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-sizing:border-box;
 }
 
 .main-footer {
@@ -496,8 +578,9 @@ section.contacts {
   background-image: url("img/map1.png");
   position: relative;
   padding-top: 54px;
-  padding-left: 140px;
-  padding-right: 981;
+  overflow:hidden ;
+  
+  
 }
 
 .footer-social ul {
@@ -514,8 +597,9 @@ section.contacts {
 }
 
 .footer-social-container {
-  padding-top: 150px;
+  margin-top: 150px;
   position: relative;
+background-color: #ffffff;
 }
 
 /* Social button*/
@@ -559,6 +643,12 @@ section.contacts {
 
 .social-item:hover {
   background-color: #E74246;
+}
+
+.social-item:active{
+  background-color: #D7373B;
+  background-image: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .footer-proposal {
@@ -704,6 +794,11 @@ section.contacts {
   background-color: #DFDFDF;
 }
 
+.pagination-number:active{
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: #D5D5D5;
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .pagination-list {
 
@@ -736,6 +831,12 @@ section.contacts {
   background-color: #DFDFDF;
 }
 
+.button-next:active{
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: #D5D5D5;
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
 
 .filter fieldset {
   padding: 0px;
@@ -773,12 +874,13 @@ section.contacts {
   opacity: 1;
 }
 
-.button-more:hover {
-  background-color: #E74246;
+.partners-group-image{
+  opacity: 0.2;
 }
 
-.button-website:hover {
-  background-color: #E74246;
+.partners-group-image:hover{
+  opacity: 1;
+  transition: 0.25s;
 }
 
 .Rectangle {
@@ -869,4 +971,71 @@ section.contacts {
 
 .price-controls label {
   text-transform: uppercase;
+}
+
+.button.modal-close{
+ border: none;
+ transform: translateX(50%);
+ /*background-image: url("../img/shape1.png");*/
+ background-color: red;
+ display: block;
+ padding: 0px;
+ cursor: pointer;
+}
+
+.close{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.write-text{
+  width: 100%;
+}
+
+.username.email {
+  display: flex;
+  justify-content: space-between;
+ 
+  
+}
+
+.write-username{
+  color:#B4B9BB ;
+  border-radius: 3px;
+  
+}
+
+.write-email{
+  color:#B4B9BB ;
+  border-radius: 3px;
+}
+
+.button-send{
+  background: #FB565A;
+  border-radius: 3px;
+  font: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  padding-block-start: 17px;
+  padding-block-end: 17px;
+  padding-left: 54px;
+  padding-right: 54px;
+  display: inline-block;
+  margin-block-start: 47px;
+  transition: 0.25s;
+}
+
+.button-send:hover {
+  background-color: #E74246;
+}
+
+.button-send:active{
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+ background-color: #D7373B; 
+ color: rgba(255, 255, 255, 0.3);
 }
