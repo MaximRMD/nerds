@@ -82,19 +82,26 @@
       <fieldset class="grig">
         <legend>Сетка:</legend>
         <ul class="radio">
-          <li>
+          <li>   
             <input class="radio-input" type="radio" name="Адаптивная" id="filter-Адаптивная" checked>
+            <span class="custom-radio"></span>
             <label for="filter-Адаптивная">Адаптивная</label>
           </li>
 
-          <li>
+          <li>           
             <input class="radio-input" type="radio" name="Фиксированная" id="filter-Фиксированная">
+            <span class="custom-radio"></span>
             <label for="filter-Фиксированная">Фиксированная</label>
           </li>
 
-          <li>
+          <li>   
+           
+
             <input class="radio-input" type="radio" name="Резиновая" id="filter-Резиновая">
-            <label for="filter-Резиновая">Резиновая</label>
+            <span class="custom-radio"></span>
+
+            <label for="filter-Резиновая"> Резиновая</label>
+
           </li>
         </ul>
       </fieldset>
@@ -104,22 +111,27 @@
         <legend>Особенности:</legend>
         <ul class="checkbox">
           <li>
-            <input class="checkbox-input-checked" type="checkbox" name="Слайдер" id="filter-слайдер" checked>
+            <span class="check__box"></span>
+            <input class="checkbox-input" type="checkbox" name="Слайдер" id="filter-слайдер" checked>
             <label for="filter-слайдер">Слайдер</label>
           </li>
           <li>
+            <span class="check__box"></span>
             <input class="checkbox-input" type="checkbox" name="Блок преимуществ" id="filter-Блок преимуществ">
             <label for="filter-Блок преимуществ">Блок преимуществ</label>
           </li>
           <li>
-            <input class="checkbox-input-checked" type="checkbox" name="Новости" id="filter-Новости" checked>
+            <span class="check__box"></span>
+            <input class type="checkbox" name="Новости" id="filter-Новости" checked>
             <label for="filter-Новости">Новости</label>
           </li>
           <li>
+            <span class="check__box"></span>
             <input class="checkbox-input" type="checkbox" name="Галерея" id="filter-Галерея">
             <label for="filter-Галерея">Галерея</label>
           </li>
           <li>
+            <span class="check__box"></span>
             <input class="checkbox-input" type="checkbox" name="Корзина" id="filter-Корзина">
             <label for="filter-Корзина">Корзина</label>
           </li>
@@ -138,9 +150,20 @@
     <section class="gallery">
       <div class="sorting">
         <h2>Сортировать:</h2>
-        <p>По цене</p>
-        <p>По типу</p>
-        <p>По названию</p>
+        <div class="sorting-list">
+          <ul class="sorting-item">
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По названию</li>
+           
+          </ul>
+           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+            <path d="M5.5 10L0 0H11" fill="#231F20"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+              </svg>
+        </div>
       </div>
       <!--</section>!-->
 
@@ -250,8 +273,8 @@
     </section>
 
     <section class="footer-social-container">
-
-      <div class="social-button">
+      <div class="container">
+        <div class="social-button">
         <ul class="social-list">
           <li class="social-item">
             <a href="#">Вконтакте</a>
@@ -264,8 +287,6 @@
           </li>
         </ul>
       </div>
-
-      <div class="container-2">
         <section class="footer-proposal">
           <h3>Давайте дружить это выгодно</h3>
           <p>Скидка 10% из социальных сетей.</p>
