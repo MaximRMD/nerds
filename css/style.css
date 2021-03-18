@@ -174,20 +174,20 @@ li {
 
 .main-background {}
 
-.icon-dir{
+.icon-dir {
   transition: 0.25s;
   fill: #A6A6A6;
   cursor: pointer;
   opacity: 0.2;
 }
 
-.icon-dir:hover{
-fill: #A6A6A6;
-opacity: 1; 
+.icon-dir:hover {
+  fill: #A6A6A6;
+  opacity: 1;
 }
 
 .icon-dir:active,
-.icon-dir:focus{
+.icon-dir:focus {
   fill: #000;
   opacity: 1;
 }
@@ -217,17 +217,17 @@ opacity: 1;
   opacity: 0.3;
 }
 
-.sorting-item li:hover, 
-.sorting-item li:focus{
+.sorting-item li:hover,
+.sorting-item li:focus {
   opacity: 0.6;
-  
+
 }
 
 .sorting-item li:active,
-.sorting-item li:focus{
+.sorting-item li:focus {
   opacity: 1;
   color: #000000;
-  
+
 }
 
 
@@ -244,6 +244,7 @@ opacity: 1;
   margin-right: auto;
   margin-left: auto;
   padding: 0 10px;
+  margin-bottom: 76px;
 }
 
 .flexbox {
@@ -429,6 +430,7 @@ section.contacts {
   width: 319px;
   padding: 38px 50px 47px;
   box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 40%);
 }
 
 .map {
@@ -662,18 +664,7 @@ section.contacts {
 }
 
 /* Footer */
-.write {
-  padding-left: 100px;
-  padding-top: 63px;
-  padding-right: 100px;
-  padding: 84px;
-  max-width: 761px;
-  left: 240px;
-  top: 1706px;
-  background: #FFFFFF;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  box-sizing: border-box;
-}
+
 
 .main-footer {
 
@@ -846,7 +837,8 @@ section.contacts {
   transition: 0.25s;
   cursor: pointer;
 }
-.check__box:hover{
+
+.check__box:hover {
   opacity: 1;
 }
 
@@ -856,7 +848,7 @@ section.contacts {
 
 }
 
-.point{
+.point {
   cursor: pointer;
 }
 
@@ -908,16 +900,16 @@ section.contacts {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.input-show{
+.input-show {
   cursor: pointer;
   transition: 0.25s;
 }
 
-.input-show:hover{
+.input-show:hover {
   background-color: #DFDFDF;
 }
 
-.input-show:active{
+.input-show:active {
   background-color: #D5D5D5;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -1195,14 +1187,30 @@ section.contacts {
   text-transform: uppercase;
 }
 
-.button.modal-close {
+.modal{
+  position: fixed;
+}
+
+.modal-close {
   border: none;
   transform: translateX(50%);
-  /*background-image: url("../img/shape1.png");*/
-  background-color: red;
+  background-image: url("../img/Vector.svg");
+
   display: block;
   padding: 0px;
   cursor: pointer;
+  width: 21px;
+  height: 21px;
+  opacity: 0.3;
+  transition: 0.25s;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active{
+  opacity: 0.1;
 }
 
 .close {
@@ -1213,26 +1221,97 @@ section.contacts {
 }
 
 .write-text {
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.5;
+  align-items: center;
   width: 100%;
+  border: 2px solid #D7DCDE;
+  border-radius: 3px;
+transition: 0.25s;
 }
+
+.write-text:hover{
+  border-color: #B4B9BB;
+  }
+
+
 
 .username.email {
-  display: flex;
-  justify-content: space-between;
-
-
+  width: 797px;
 }
 
-.write-username {
-  color: #B4B9BB;
-  border-radius: 3px;
+.item-paragraph {
+  margin: 0;
+  padding: 0;
+}
 
+.write {
+  margin-top: 40px;
+  padding-left: 100px;
+  padding-top: 63px;
+  padding-right: 100px;
+  padding: 84px;
+  width: 960px;
+  margin-left: 240px;
+  top: 1706px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.write-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  column-gap: 40px;
+}
+
+/*.write-form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}*/
+
+.write-username {
+  margin-bottom: 34px;
+  border: 2px solid #D7DCDE;
+  border-radius: 3px;
+  width: 360px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.5;
+  align-items: center;
+  padding-right: 30px;
+  transition: 0.25s;
+}
+
+.write-username:hover{
+border-color: #B4B9BB;
 }
 
 .write-email {
-  color: #B4B9BB;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.5;
+  align-items: center;
+  width: 360px;
+  height: 50px;
+  border: 2px solid #D7DCDE;
   border-radius: 3px;
+  transition: 0.25s;
 }
+
+.write-email:hover,
+.write-email:focus{
+  border-color: #B4B9BB;
+  color: #000;
+  }
 
 .button-send {
   background: #FB565A;
