@@ -336,6 +336,7 @@ li {
   padding-left: 0px;
 }
 
+
 .services-list h2 {
   margin-left: 0px;
   padding-left: 0px;
@@ -357,14 +358,24 @@ li {
   color: #283136;
   margin-bottom: 20px;
   padding-top: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.services-item::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #FB565A;
+  margin-right: 7px;
+
 }
 
 .list-style {
   width: 25px;
   height: 2px;
 
-
-  background: violet;
 }
 
 /*advantages*/
@@ -443,40 +454,43 @@ section.contacts {
   bottom: 0px;
 }
 
+
+
 .partners-list {
-  border-bottom: solid 2px #EEEEEE;
+  /* border-bottom: solid 2px #EEEEEE;*/
   align-items: center;
   display: flex;
   justify-content: space-between;
+  padding-left: 40px;
   margin-top: 0px;
-  margin-bottom: 80px;
-  padding-bottom: 44px;
   padding-top: 44px;
-
-
-
-  /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 42px;*/
+  width: 1085px;
 }
 
-.partners-borodinski {
-  border-left: 2px solid #EEEEEE;
-  padding-left: 45px;
-  height: 45px;
-
+.partners::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-right: 7px;
+  background: #EEEEEE;
+  margin-top: 44px;
+  width: 1158px;
 }
 
-.partners-pink {
-  border-left: 2px solid #EEEEEE;
-  padding-left: 45px;
-  height: 45px;
+.partners-item {
+  display: flex;
+  align-items: center;
 }
 
-.partners-mishka {
-  border-left: 2px solid #EEEEEE;
-  padding-left: 45px;
-  height: 45px;
+.partners-item::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 2px;
+  margin-right: 7px;
+  transform: rotate(90deg);
+  background: #EEEEEE;
+
 }
 
 /* Button */
@@ -1187,15 +1201,17 @@ section.contacts {
   text-transform: uppercase;
 }
 
-.modal{
+.modal {
   position: fixed;
+
 }
 
 .modal-close {
   border: none;
+  border: none;
   transform: translateX(50%);
   background-image: url("../img/Vector.svg");
-
+  background-color: #ffffff;
   display: block;
   padding: 0px;
   cursor: pointer;
@@ -1209,8 +1225,9 @@ section.contacts {
   opacity: 1;
 }
 
-.modal-close:active{
+.modal-close:active {
   opacity: 0.1;
+
 }
 
 .close {
@@ -1230,12 +1247,12 @@ section.contacts {
   width: 100%;
   border: 2px solid #D7DCDE;
   border-radius: 3px;
-transition: 0.25s;
+  transition: 0.25s;
 }
 
-.write-text:hover{
+.write-text:hover {
   border-color: #B4B9BB;
-  }
+}
 
 
 
@@ -1249,7 +1266,8 @@ transition: 0.25s;
 }
 
 .write {
-  margin-top: 40px;
+  bottom: auto;
+  margin-top: 61px;
   padding-left: 100px;
   padding-top: 63px;
   padding-right: 100px;
@@ -1290,8 +1308,8 @@ transition: 0.25s;
   transition: 0.25s;
 }
 
-.write-username:hover{
-border-color: #B4B9BB;
+.write-username:hover {
+  border-color: #B4B9BB;
 }
 
 .write-email {
@@ -1308,10 +1326,10 @@ border-color: #B4B9BB;
 }
 
 .write-email:hover,
-.write-email:focus{
+.write-email:focus {
   border-color: #B4B9BB;
   color: #000;
-  }
+}
 
 .button-send {
   background: #FB565A;
@@ -1339,4 +1357,82 @@ border-color: #B4B9BB;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   background-color: #D7373B;
   color: rgba(255, 255, 255, 0.3);
+}
+
+
+.sedona-card {
+  padding-top: 26px;
+  padding-bottom: 44px;
+  background: #EEEEEE;
+  width: 360px;
+  top: 522px;
+}
+
+.sale-button {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
+  background: #FB565A;
+  color: #FFFFFF;
+  border-radius: 3px;
+  transition: 0.25s;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.sale-button:hover {
+  background: #E74246;
+}
+
+.sale-button:active {
+  background: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.sale {
+  color: #000;
+}
+
+.sedona-card-item {
+  width: 208px;
+  font-weight: 400;
+  color: #666666;
+  font-size: 16px;
+}
+
+.sedona-card-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.sedona-card-info {
+  margin-left: 75px;
+}
+
+.sedona-title {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sedona-card{
+  top: 1002px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.sedona-card:hover{
+opacity: 1;
+}
+.sorting-title{
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: -95px;
 }
