@@ -52,6 +52,7 @@
 
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -63,17 +64,24 @@ img {
 /* Main */
 
 
-.main-navigation-wrapper {}
+.main-navigation-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 40px;
+}
 
 .main-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
+  padding-top: 49px;
 }
 
 .site-navigation-cart {
-  grid-column-start: 7;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .site-navigation {
@@ -81,37 +89,51 @@ img {
   font-style: normal;
   font-size: 16px;
   padding-left: 0px;
-  margin-block-start: 75px;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 45px;
+  display: flex;
   line-height: 30px;
   color: var(--basic-black--);
   background-color: transparent;
-  list-style: none;
+}
 
+.site-navigation li {
+  margin-right: 46px;
+}
 
+.site-navigation li:last-child {
+  margin-right: 0;
 }
 
 .site-navigation a,
-li {
+.site-navigation-cart,
+.site-navigation li {
+  position: relative;
   color: var(--basic-black--);
   transition: 0.15s;
+}
 
-
-
+.site-navigation-cart:hover,
+.site-navigation-cart:focus {
+  color: #FB565A;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #FB565A;
-
 }
 
 .site-navigation a:active,
-.site-navigation a:focus {
+.site-navigation-cart:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a.active:before,
+.site-navigation-cart.active:before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 100%;
   border-bottom: #FB565A 2px solid;
   padding-bottom: 12px;
 }
@@ -127,13 +149,11 @@ li {
   margin-bottom: 0px;
   background: #EEEEEE;
   min-height: 355px;
+  margin-bottom: 58px;
 
 }
 
-.main-header-logo {
 
-  margin-block-start: 49px;
-}
 
 .slide {
 
@@ -158,7 +178,7 @@ li {
   font-size: 55px;
   line-height: 55px;
   margin-top: 70px;
-  margin-bottom: 27;
+  margin-bottom: 27px;
 
 }
 
@@ -193,7 +213,7 @@ li {
 }
 
 .sorting {
-
+  margin-bottom: 28px;
   font-weight: 400;
   padding-left: 0px;
   display: flex;
@@ -243,8 +263,6 @@ li {
   margin: 0;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 10px;
-  margin-bottom: 76px;
 }
 
 .flexbox {
@@ -258,26 +276,25 @@ li {
 /* Offers*/
 
 .offers {
-  padding-top: 80px;
-  margin-bottom: 121px;
+  padding-top: 19px;
+  margin-bottom: 80px;
   list-style: none;
 
 }
 
 .offers-list {
-  font: normal;
+  font-weight: normal;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   column-gap: 100px;
   list-style: none;
-  text-align: center;
+  margin-right: 60px;
 
 }
 
 .offers-item {
-  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -288,7 +305,14 @@ li {
 
 .offers-website {}
 
-.offers-illustration {}
+.offers-illustration {
+  margin-bottom: 20px;
+}
+
+.offers-item p {
+  padding-right: 20px;
+  margin-bottom: 32px;
+}
 
 /*Benefits*/
 
@@ -296,44 +320,50 @@ li {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: px;
-  margin-top: 80px;
   padding: 0;
   border-top: 2px solid #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
-  padding-top: 73px;
+  padding-top: 39px;
   padding-bottom: 73px;
 }
 
 .benefist-description {
-  width: 651px;
+  width: 660px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding: 0px;
-  margin: 0px;
-
+  padding-top: 31px;
 }
 
 .description {
-  padding-bottom: 32px;
-  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 45px;
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 500;
 }
 
 .paragraph-description {
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   font-size: 16px;
   color: #283136;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
 
-
+.services-list-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .services-list {
-  padding-top: 40px;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -350,16 +380,21 @@ li {
 .paragraph-list {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 31px;
+  margin-bottom: 22px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .services-item {
   list-style: none;
   color: #283136;
-  margin-bottom: 20px;
-  padding-top: 23px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
+}
+
+.services-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .services-item::before {
@@ -368,8 +403,8 @@ li {
   width: 25px;
   height: 2px;
   background: #FB565A;
-  margin-right: 7px;
-
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .list-style {
@@ -381,13 +416,13 @@ li {
 /*advantages*/
 
 .container-img {
-  padding-bottom: 37px;
+  margin-bottom: 27px;
 }
 
 .advantages {
-  margin-left: 149px;
+  margin-left: 140px;
   padding: 0;
-  width: 374px;
+  width: 358px;
   height: 413px;
 
 }
@@ -396,15 +431,20 @@ li {
   color: #283136;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
   font-weight: 400;
 
+}
+
+.advantages-item sup {
+  font-size: 26px;
 }
 
 .advantages-item h3 {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
-  margin-bottom: -18px;
+  margin-bottom: 12px;
   margin-top: 0px;
 }
 
@@ -425,8 +465,8 @@ li {
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 22px;
   list-style: none;
+  margin-top: 0;
   /*text-align: center;*/
   padding: 0px;
   /*outline: #EFC849 solid 5px;*/
@@ -442,6 +482,14 @@ section.contacts {
   padding: 38px 50px 47px;
   box-sizing: border-box;
   box-shadow: 0px 20px 40px rgb(0 0 0 / 40%);
+  text-align: center;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .map {
@@ -454,32 +502,35 @@ section.contacts {
   bottom: 0px;
 }
 
-
+.main {
+  margin-bottom: 80px;
+}
 
 .partners-list {
-  /* border-bottom: solid 2px #EEEEEE;*/
+  border-bottom: solid 2px #EEEEEE;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  margin-top: 0px;
-  padding-top: 44px;
-  width: 1085px;
+  padding-left: 32px;
+  padding-right: 43px;
+  margin: 0px;
+  padding-top: 48px;
+  padding-bottom: 34px;
+  /* width: 1085px; */
 }
 
-.partners::after {
-  content: "";
-  display: block;
-  height: 2px;
-  margin-right: 7px;
-  background: #EEEEEE;
-  margin-top: 44px;
-  width: 1158px;
-}
 
 .partners-item {
   display: flex;
   align-items: center;
+}
+
+.partners-item-two {
+  padding-right: 6px;
+}
+
+.partners-item-three {
+  padding-right: 25px;
 }
 
 .partners-item::before {
@@ -490,7 +541,10 @@ section.contacts {
   margin-right: 7px;
   transform: rotate(90deg);
   background: #EEEEEE;
+}
 
+.partners-item:first-child:before {
+  display: none;
 }
 
 /* Button */
@@ -511,6 +565,7 @@ section.contacts {
   padding-left: 44px;
   padding-right: 44px;
   transition: 0.25s;
+  display: inline-block;
 }
 
 .contacts-button:hover {
@@ -549,7 +604,6 @@ section.contacts {
 .input-show {
   background: #EEEEEE;
   border-radius: 3px;
-  font: normal;
   font-size: 16px;
   color: #000000;
   border: none;
@@ -558,7 +612,6 @@ section.contacts {
   padding-left: 88px;
   padding-right: 88px;
   display: inline-block;
-  margin-block-start: 50px;
   margin-right: 0px;
   width: 260px;
   transition: 0.25s;
@@ -579,89 +632,65 @@ section.contacts {
   transition: 0.20s;
 }
 
-.button-website {
+.button {
   text-transform: uppercase;
   font: inherit;
   text-align: center;
   color: #FFFFFF;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #FB565A;
   border: none;
-  padding-block-start: 17px;
-  padding-block-end: 17px;
+  padding-block-start: 14px;
+  padding-block-end: 14px;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 3px;
   transition: 0.25s;
-
+  display: inline-block;
 }
 
-.button-website:hover {
+.button:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-red {
+  background-color: #FB565A;
+}
+
+.button-red:hover {
   background-color: #E74246;
 }
 
-.button-website:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.button-red:active {
   background-color: #D7373B;
-  color: rgba(255, 255, 255, 0.3);
-
 }
 
-.button-applications {
-  text-transform: uppercase;
-  border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: #FFFFFF;
-  vertical-align: middle;
+.button-green {
   background-color: #00CA74;
-  border: none;
-  text-transform: uppercase;
-  padding-block-start: 17px;
-  padding-block-end: 17px;
-  padding-left: 40px;
-  padding-right: 40px;
-  transition: 0.25s;
-
 }
 
-.button-applications:hover {
+.button-green:hover {
   background-color: #00BC6C;
 }
 
-.button-applications:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.button-green:active {
   background-color: #00AA62;
-  color: rgba(255, 255, 255, 0.3);
 }
 
-.button-presentation {
-  text-transform: uppercase;
-  border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: #FFFFFF;
-  vertical-align: middle;
+
+.button-yellow {
   background-color: #EFC849;
-  border: none;
-  text-transform: uppercase;
-  padding-block-start: 17px;
-  padding-block-end: 17px;
-  padding-left: 40px;
-  padding-right: 40px;
-  transition: 0.25s;
 }
 
-.button-presentation:hover {
+.button-yellow:hover {
   background-color: #EAB534;
 }
 
-.button-presentation:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.button-yellow:active {
   background-color: #E5A722;
-  color: rgba(255, 255, 255, 0.3);
 }
+
 
 .button-send {
   font: inherit;
@@ -675,6 +704,10 @@ section.contacts {
 
 .offers-item h3 {
   text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 /* Footer */
@@ -797,6 +830,9 @@ section.contacts {
 .contacts-phone {
   margin-bottom: 32px;
   color: var(--bacic-extra);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 /*Catalog*/
@@ -807,31 +843,33 @@ section.contacts {
   text-align: center;
   font-size: 55px;
   font-style: normal;
-  padding-top: 92px;
-  padding-bottom: 108px;
+  padding-top: 32px;
+
   padding-left: 207px;
   padding-right: 227px;
   line-height: 55px;
 }
 
 .radio {
-  padding-left: 4px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 44px;
 }
 
 
 .radio li,
 .checkbox li {
   line-height: 20px;
-  font-weight: 400;
   font-size: 16px;
-  font: normal;
+  font-weight: 400;
   color: #283136;
   list-style: none;
-  margin-bottom: 20px;
-  cursor: pointer;
+  margin-bottom: 16px;
 
 
 }
+
+.radio li :not(:last-of-type) {}
 
 .checkbox-input {
   padding-left: 2.2em;
@@ -863,6 +901,7 @@ section.contacts {
 }
 
 .point {
+  margin-bottom: 0px;
   cursor: pointer;
 }
 
@@ -917,6 +956,11 @@ section.contacts {
 .input-show {
   cursor: pointer;
   transition: 0.25s;
+  margin-top: 51px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .input-show:hover {
@@ -946,7 +990,7 @@ section.contacts {
 
 .gallery {
   max-width: 760px;
-  margin-top: 55px;
+
 
 }
 
@@ -954,7 +998,7 @@ section.contacts {
   width: 359px;
   min-height: 578px;
   box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .gallery-list {
@@ -964,7 +1008,7 @@ section.contacts {
   margin: 0px;
   list-style: none;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 23px;
 
   /*display: grid;
     grid-template-columns:  1fr 1fr;
@@ -976,14 +1020,26 @@ section.contacts {
 }
 
 .filter {
-  margin-top: 55px;
   width: 260px;
 }
 
-.filter legend {
+.features-title {
   margin-bottom: 48px;
+  padding: 0px;
+  text-transform: uppercase;
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
 }
+
+.grid {
+  margin-bottom: 13px;
+}
+
+.specificity {
+  margin-bottom: 0px;
+}
+
 
 .fieldset ul {
   padding: 0px;
@@ -995,7 +1051,8 @@ section.contacts {
 .pagination-number {
   background: #EEEEEE;
   border-radius: 3px;
-  font: normal;
+  font-weight: 500;
+  line-height: 18px;
   font-size: 16px;
   color: #000000;
   border: none;
@@ -1031,7 +1088,6 @@ section.contacts {
 .pagination-list {
 
   margin-top: 0px;
-  margin-bottom: 0px;
   display: flex;
   padding-left: 0px;
   list-style: none;
@@ -1041,18 +1097,18 @@ section.contacts {
 .button-next {
   background: #EEEEEE;
   border-radius: 3px;
-  font: normal;
+  font-weight: 500;
   font-size: 16px;
   color: #000000;
   border: none;
   padding-block-start: 16px;
   padding-block-end: 16px;
-  padding-left: 88px;
-  padding-right: 88px;
+  padding-left: 78px;
+  padding-right: 78px;
   display: inline-block;
-  margin-right: 0px;
   width: 260px;
   transition: 0.25s;
+  text-transform: uppercase;
 }
 
 .button-next:hover {
@@ -1068,9 +1124,11 @@ section.contacts {
 
 .filter fieldset {
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 47px;
+  margin-left: 0px;
+  margin-bottom: 0px;
   border: none;
+  margin-right: 0px;
+
 
 }
 
@@ -1125,6 +1183,7 @@ section.contacts {
 
 .range-filter {
   width: 260px;
+  margin-bottom: 53px;
 }
 
 .filter-item legend {
@@ -1142,6 +1201,7 @@ section.contacts {
   padding-right: 20px;
   padding-left: 20px;
   position: relative;
+  margin-bottom: 14px;
 }
 
 .range-controls .bar {
@@ -1179,7 +1239,9 @@ section.contacts {
 
 .price-controls input {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   width: 60px;
   padding: 10px;
   margin-left: 10px;
@@ -1188,13 +1250,12 @@ section.contacts {
   border: none;
   border-radius: 5px;
   background: #EEEEEE;
-
+  text-transform: uppercase;
 }
 
 .price-controls {
   display: flex;
   justify-content: space-between;
-  margin-top: 14px;
 }
 
 .price-controls label {
@@ -1370,7 +1431,7 @@ section.contacts {
 
 .sale-button {
   padding-top: 17px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-left: 72px;
   padding-right: 72px;
   background: #FB565A;
@@ -1380,6 +1441,8 @@ section.contacts {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
+  margin-left: 3px;
+  display: inline-block;
 }
 
 .sale-button:hover {
@@ -1405,7 +1468,8 @@ section.contacts {
 .sedona-card-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
+  line-height: 21px;
 }
 
 .sedona-card-info {
@@ -1416,10 +1480,12 @@ section.contacts {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 9px;
 }
 
-.sedona-card{
-  top: 1002px;
+.sedona-card {
+  top: 862px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -1428,11 +1494,16 @@ section.contacts {
   transition: 0.25s;
 }
 
-.sedona-card:hover{
-opacity: 1;
+.sedona-card:hover {
+  opacity: 1;
 }
-.sorting-title{
+
+.sorting-title {
   font-size: 18px;
   font-weight: 700;
   margin-left: -95px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
 }
