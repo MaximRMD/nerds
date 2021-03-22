@@ -51,12 +51,29 @@
         <div class="slide">
           <div>
             <h1 class="glav">Долго, дорого, скрупулезно.</h1>
-            <p class="glav-p">Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения.</p>
+            <p class="glav-p">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
             <a href="card.php?123" class="button-more">Узнать больше
             </a>
           </div>
           <img class="nerds-slide" src="img/nerds-index-slide1.png" width="760" height="431" alt="">
+        </div>
+        <div class="slide slide-hidden">
+          <div>
+            <h1 class="glav">Любим математику как никто другой</h1>
+            <p class="glav-p glav-p-wide">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a href="card.php?123" class="button-more">Узнать больше
+            </a>
+          </div>
+          <img class="nerds-slide" src="img/nerds-index-slide2.png" width="760" height="431" alt="">
+        </div>
+        <div class="slide slide-hidden">
+          <div>
+            <h1 class="glav">Только ночь, только&nbsp;хардкор</h1>
+            <p class="glav-p">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="card.php?123" class="button-more">Узнать больше
+            </a>
+          </div>
+          <img class="nerds-slide" src="img/nerds-index-slide3.png" width="760" height="431" alt="">
         </div>
       </section>
     </div>
@@ -103,7 +120,7 @@
         <h2 class="description">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p class="paragraph-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как
           роботы.</p>
-        <h2 class="services-list-title" >Выполняем заказы на разработку:</h2>
+        <h2 class="services-list-title">Выполняем заказы на разработку:</h2>
         <ul class="services-list">
           <li class="services-item">Веб-сайтов любой сложности.</li>
           <li class="services-item">Мобильных приложений для iOS и Android</li>
@@ -191,73 +208,75 @@
 
   <footer class="main-footer">
     <section class="main-footer-container">
-      <div class="container">
-        <iframe class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002815!2d30.320858715692516!3d59.93871916905466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616092546171!5m2!1sru!2sru"
-          width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="container ">
+        <div id="map" class="map">
+
+        </div>
         <section class="contacts">
           <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
           <p class="contacts-paragraph">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8&nbsp;
-            
+
           </p>
           <p class="tel">
-          <a class="contacts-phone " href="tel:+78122757575"> Тел. +7 (812) 275-75-75</a>
-               </p>
+            <a class="contacts-phone " href="tel:+78122757575"> Тел. +7 (812) 275-75-75</a>
+          </p>
           <a href="#" class="contacts-button">Напишите нам
-          </a>  
+          </a>
         </section>
       </div>
     </section>
-    <section class="footer-social-container">
-      <div class="container">
-        <div class="social-button">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#">Вконтакте</a>
-            </li>
-            <li class="social-item">
-              <a href="#">Фейсбук</a>
-            </li>
-            <li class="social-item">
-              <a href="#">Инстаграмм</a>
-            </li>
-          </ul>
-        </div>
-        <section class="footer-proposal">
-          <h3>Давайте дружить это выгодно</h3>
-          <p>Скидка 10% из социальных сетей.</p>
-        </section>
+    <section class="container footer-social-container">
+      <div class="social-button">
+        <ul class="social-list">
+          <li class="social-item social-item-vk">
+            <a href="#">Вконтакте</a>
+          </li>
+          <li class="social-item social-item-fb">
+            <a href="#">Фейсбук</a>
+          </li>
+          <li class="social-item social-item-inst">
+            <a href="#">Инстаграмм</a>
+          </li>
+        </ul>
       </div>
+      <section class="footer-proposal">
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
     </section>
   </footer>
-  <!--<section class="modal">
-    <h2 class="visually-hidden">Попап перед картой:</h2>
-   <div class="write">
+
+  <section class="modal">
+    <!--<h2 class="visually-hidden">Попап перед картой:</h2>!-->
+    <div class="write">
       <div class="close">
-        <h3>Напишите нам</h3>
+        <h3 class="write-title">Напишите нам</h3>
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </div>
-      <div class="username email">
-        <form class="write-form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="write-item">
-            <p class="item-paragraph"><label for="name">Ваше имя:</label>
-              <input class="write-username" id="name" type="email" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="item-paragraph"> <label for="email">Ваше email:</label>
-              <input class="write-email" id="email" type="email" name="email" placeholder="email@example.com">
-            </p>
-          </div>
 
-          <label for="text">Текст письма:</label><br>
-          <textarea class="write-text" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="write-item">
+          <p class="item-paragraph">
+            <label class="input-title" for="name">Ваше имя:</label>
+            <input class="write-input write-input-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
-          <button class="button-send" type="submit">Отправить</button>
-        </form>
-      </div>
+          <p class="item-paragraph">
+            <label class="input-title" for="email">Ваш email:</label>
+            <input class="write-input write-input-email" id="email" type="email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="item-paragraph">
+          <label class="input-title" for="text">Текст письма:</label><br>
+          <textarea class="write-text" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button-send" type="submit">Отправить</button>
+      </form>
+
     </div>
-  </section>!-->
+  </section>
 
-
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
