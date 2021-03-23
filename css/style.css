@@ -809,15 +809,15 @@ section.contacts {
 }
 
 .social-item-vk {
-  background-image: url(../img/shape.png);
+  background-image: url(../img/Shape.png);
 }
 
 .social-item-inst {
-  background-image: url(../img/shape3.png);
+  background-image: url(../img/Shape3.png);
 }
 
 .social-item-fb {
-  background-image: url(../img/shape2.png);
+  background-image: url(../img/Shape2.png);
 }
 
 .social-item:hover {
@@ -1563,9 +1563,6 @@ section.contacts {
   color: #FB565A;
 }
 
-.card-title:active{
-  color: rgba(0, 0, 0, 0.3);
-}
 
 .card {
   bottom: 0;
