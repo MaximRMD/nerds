@@ -25,13 +25,15 @@
 
 
 }
-.visually-hidden{
+
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
 }
+
 /* Global*/
 .page-body {
   min-width: 1157px;
@@ -170,9 +172,11 @@ img {
   position: relative;
   padding-bottom: 40px;
 }
-.slide-hidden{
+
+.slide-hidden {
   display: none;
 }
+
 .nerds-slide {
   width: 760px;
   object-fit: contain;
@@ -199,13 +203,10 @@ img {
   margin-bottom: 0px;
   max-width: 366px;
 }
-.glav-p-wide{
+
+.glav-p-wide {
   max-width: 435px;
 }
-
-.main-header-catalog {}
-
-.main-background {}
 
 .icon-dir {
   transition: 0.25s;
@@ -329,8 +330,6 @@ img {
   line-height: 24px;
 
 }
-
-.offers-website {}
 
 .offers-illustration {
   margin-bottom: 20px;
@@ -1563,6 +1562,9 @@ section.contacts {
   color: #FB565A;
 }
 
+.card-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .card {
   bottom: 0;
