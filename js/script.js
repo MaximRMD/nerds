@@ -17,7 +17,7 @@ if (contactPopup) {
 
   contactButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    contactPopup.classList.add("modal_show");
+    contactPopup.classList.add("modal-show");
 
     if (storage) {
       contactName.value = storage;
@@ -29,17 +29,17 @@ if (contactPopup) {
 
   contactClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    contactPopup.classList.remove("modal_show");
-    contactPopup.classList.remove("modal_error");
+    contactPopup.classList.remove("modal-show");
+    contactPopup.classList.remove("modal-error");
   });
 
   contactForm.addEventListener("submit", function (evt) {
     if (!contactName.value || !contactEmail.value) {
       evt.preventDefault();
 
-      contactPopup.classList.remove("modal_error");
+      contactPopup.classList.remove("modal-error");
       contactPopup.offsetWidth = contactPopup.offsetWidth;
-      contactPopup.classList.add("modal_error");
+      contactPopup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("name", contactName.value);
@@ -48,10 +48,10 @@ if (contactPopup) {
   });
   window.addEventListener("keydown", function (evt) {
     if (evt.key === "Escape") {
-      if (contactPopup.classList.contains("modal_show")) {
+      if (contactPopup.classList.contains("modal-show")) {
         evt.preventDefault();
-        contactPopup.classList.remove("modal_show");
-        contactPopup.classList.remove("modal_error");
+        contactPopup.classList.remove("modal-show");
+        contactPopup.classList.remove("modal-error");
       }
     }
   });
