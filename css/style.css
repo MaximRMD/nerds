@@ -1284,7 +1284,7 @@ section.contacts {
 .range-controls .bar {
 
   height: 2px;
-  background:  var(--bacic-green);
+  background:  var(--basic-green);
 }
 
 .range-controls .toggle {
