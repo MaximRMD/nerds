@@ -1,5 +1,5 @@
 const navbar = document.querySelector('.header__nav')
-const links = document.querySelectorAll('a')
+const links = document.querySelectorAll('.button-more')
 links.forEach((link) => {
     link.addEventListener('click', (event) => {
         event.preventDefault()
